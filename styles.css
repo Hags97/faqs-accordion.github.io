@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url('./assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+
+    
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font:inherit;
+}
+
+img,svg{
+    
+    display: block;
+}
+
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --pink: hsl(281, 83%, 54%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+    --font-family: "Work Sans", sans-serif;
+    --fs-text: 1rem;
+    --fs-h1: 2.5rem;
+}
+
+body{
+    font-family: var(--font-family);
+    font-weight: 400;
+    min-height: 100vh;
+    background: url('./assets/images/background-pattern-mobile.svg') no-repeat top center/contain;
+    
+    background-color: var(--Light-pink);
+    line-height: 1.6;
+    margin-top: 7rem;
+}
+
+h1{
+    font-size: var(--fs-h1);
+    font-weight: 700;
+    color: var(--Dark-purple);
+}
+
+.card{
+    background-color: var(--White);
+    padding: 1rem;
+    width: 90%;
+    max-width: 550px;
+    max-height: min-content;
+    border-radius: 10px;
+    margin-top: 10vh;
+    margin-inline: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.bold-text{
+    color: var(--Dark-purple);
+    font-weight: 600;
+}
+.bold-text:hover{
+    color: var(--pink);
+}
+
+.questions > *{
+    padding: 2rem;
+}
+
+.accordion-item{
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-content{
+    color: var(--Grayish-purple);
+    margin-top: 1rem;
+}
+
+.accordion-item:nth-child(2), .accordion-item:nth-child(3),.accordion-item:nth-child(4) {
+    border-top: 2px solid rgb(248, 248, 248);
+    
+}
+
+
+
+
+
+.plus
+{
+    display: none;
+}
+
+
+@media (min-width: 280px)
+{
+    .card{
+        margin-top: -8vh;
+    }
+}
+
+
+@media (min-width: 335px)
+{
+    .card{
+        margin-top: 1vh;
+    }
+}
+
+@media (min-width: 375px)
+{
+    .card{
+        margin-top: 1vh;
+    }
+}
+
+@media (min-width: 390px)
+{
+    .card{
+        margin-top: 15vh;
+    }
+}
+@media (min-width: 420px)
+{
+    .card{
+        margin-top: 17vh;
+    }
+}
+
+@media (min-width: 450px)
+{
+    .card{
+        margin-top: 18vh;
+    }
+}
+@media (min-width: 470px)
+{
+    .card{
+        margin-top: 22vh;
+    }
+}
+@media (min-width: 540px)
+{
+    .card{
+        margin-top: 29vh;
+    }
+}
+
+@media (min-width: 600px)
+{
+    body{
+        background: url('./assets/images/background-pattern-desktop.svg') no-repeat top center/contain;
+        background-color: var(--Light-pink);
+    }
+
+    .card{
+        padding: 2rem;
+    }
+}
+@media (min-width: 600px)
+{
+    .card{
+        margin-top: -13vh;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .card{
+        margin-top: -6.5vh;
+    }
+}
+
+@media (min-width: 912px)
+{
+    .card{
+        margin-top: -6.5vh;
+    }
+}
+@media (min-width: 950px)
+{
+    .card{
+        margin-top: -2.5vh;
+    }
+}
+
+
+@media (min-width: 1280px)
+{
+    .card{
+        margin-top: 18vh;
+    }
+}
+@media (min-width: 1440px)
+{
+    .card{
+        margin-top: 30vh;
+    }
+}
+
+
